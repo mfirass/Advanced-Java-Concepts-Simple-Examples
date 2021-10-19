@@ -5,6 +5,12 @@ import java.util.Map;
 
 public class LinkedHashMapExample {
     public static void main(String[] args) {
+        /**
+         * LinkedHashMap is ordered
+         * When access order is true it sort the entries by access time:
+             * The last one is the most recent one we've accessed
+         * When 75% full it adds more entries
+         * */
         LinkedHashMap<String, Integer> phonebook = new LinkedHashMap<String, Integer>(4, 0.75f, true);
         phonebook.put("Kevin", 3452);
         phonebook.put("Jill", 9056);
